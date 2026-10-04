@@ -1,6 +1,8 @@
 # Miscellaneous
 *.class
 *.lock
+# Apps commit their lockfile; only the plugin's stays ignored.
+!/pubspec.lock
 *.log
 *.pyc
 *.swp
@@ -30,6 +32,11 @@ analysis_benchmark.json
 
 # packages file containing multi-root paths
 .packages.generated
+
+# IDE
+.idea/
+*.iml
+.DS_Store
 
 # Flutter/Dart/Pub related
 **/doc/api/
